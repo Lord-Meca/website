@@ -1,0 +1,255 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,80");
+
+* {
+    
+    
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}   
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+
+    background: #3D32BF;
+    height: 80px;
+
+    width: 100%;
+
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+  
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+a.active{
+    background: #2E2692;
+    
+    transition: .5s;
+}
+
+a:hover{
+    background: rgb(35, 35, 35, 0.5);
+    
+    transition: .5s;
+}
+
+
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.presentation {
+    text-align: center;
+    justify-content: center;
+
+}
+
+.presentation .title {
+    position: relative;
+    color: #c041a4;
+
+
+}
+
+
+.presentation .rotating-words {
+    display: inline;
+    margin-left: 10px;
+
+}
+
+.presentation .rotating-words span {
+    width: max-content;
+    position: absolute;
+    color: white;
+    background-color: #4f47bd;
+    padding-inline: 10px;
+    opacity: 0;
+    transform-origin: 10% 75%;
+    animation: rotateWords 10s infinite;
+}
+
+@keyframes rotateWords {
+
+    5%{
+        opacity: 1;
+    }
+
+    10%,
+    20%{
+        opacity: 1;
+        transform: rotate(3deg);
+    }
+    15%{
+        transform: rotate(-1deg);
+    }
+    25%{
+        opacity:0;
+        transform: translateY(90px);
+        transform: rotate(10deg);
+    }
+
+    50%,
+    60%{
+
+        opacity: 1;
+        transform: rotate(-1deg);
+    }
+
+    70%,
+    80%{
+        transform: rotate(3deg);
+    }
+
+    90%{
+        transform: rotate(-1deg);
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+
+    
+}
+
+#check {
+    display: none;
+}
+
+.image {
+
+    text-align: center;
+ 
+    
+}
+
+
+
+@media (max-width: 1206px){
+
+    nav ul li a {
+        opacity: 0;
+    }
+    
+    label.logo {
+        font-size: 25px;
+        padding-right: 120px;
+    }
+
+    
+    .image {
+        float: right;
+        transform: scale(.8);
+    }
+
+
+    .presentation {
+        text-align: left;
+        justify-content: left;
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 858px){
+
+    .checkbtn{
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333058;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        opacity: 1;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #635ACB;
+    }
+
+    
+
+   
+    #check:checked ~ ul {
+        left: 0;
+      
+        
+    }
+
+  
+   
+
+   
+
+   
+
+ 
+
+}
+
+
+
+
+

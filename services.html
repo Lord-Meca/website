@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lord_Meca</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/services-style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/cursor.js"></script>
+
+</head>
+<body>
+    <section class="bg">
+        <nav class="navbar">
+            
+        
+
+            <input type="checkbox" id="check">
+        
+            <label for="check" class="checkbtn">
+
+                <i class="fa fa-bars"></i>
+            
+            </label>
+
+            <label class="logo">Lord_Meca</label>
+            <ul class="navbar-ul">
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="#services" class="active">Mes services</a></li>
+                <li><a href="#discord" class="contact">Discord</a></li>
+                <li><a href="command.html">Faire un retour</a></li>
+             
+            </ul>
+        </nav>
+
+        <br>
+        <br>
+
+        <div class="contents">
+
+            <div class="java-box">
+                
+                <img src="images/technologies/java.png" height="150" width="150" style="opacity: 1;">
+                <hr>
+                <br>
+
+                <div align="left" class="list">
+                    <br>
+                    <span style="--d: 4s" class="price">A partir de 15€</span>
+                    
+                </div>
+                
+                <br> <br>
+                <button class="btn" onclick="window.location.href='command.html'"><i class="fa fa-shopping-cart"></i> Commander</button>
+                
+                
+                
+            </div>
+
+            
+
+            <div class="image">
+        
+                <img src="images/gif/services.gif" width="500" height="380">
+    
+            </div>
+
+            <div class="nodejs-box">
+
+                <img src="images/technologies/nodejs.png" height="150" width="150" style="opacity: 1;">
+                <hr>
+
+                <br>
+
+                <div align="left" class="list">
+                    <br>
+                    <span style="--d: 4s" class="price">A partir de 15€</span>
+                </div>
+
+                <br> <br>
+                <button class="btn" onclick="window.location.href='command.html'"><i class="fa fa-shopping-cart"></i> Commander</button>
+
+           
+            
+            </div>
+        </div>
+       
+
+     
+
+  
+
+       
+
+    </section>
+
+
+   
+
+
+    <script>
+
+
+        let barsButton = document.querySelector("#check");
+
+      
+    
+       
+
+        
+        document.querySelector(".contact").addEventListener("click", () =>{
+
+            navigator.clipboard.writeText("Lord_Meca#9348");
+
+            document.querySelector(".contact").textContent = "COPIÉ";
+
+            setTimeout(() =>{
+                document.querySelector(".contact").textContent = "DISCORD";
+            }, 1000);
+
+        })
+
+
+        setInterval(() =>{
+            
+        
+   
+            if(document.body.offsetWidth >= 1207){
+                barsButton.checked = false;
+            }
+
+            if(barsButton.checked === false){
+
+                if(document.body.offsetWidth >= 1207){
+                    document.querySelector(".contents").style.display = "flex";
+                } else {
+                    document.querySelector(".contents").style.display = "grid";
+                }
+               
+              
+              
+              
+        
+            } else {
+
+                
+                
+                document.querySelector(".contents").style.display = "none";
+       
+            }
+
+
+        }, 100);
+        
+      
+
+    
+
+
+
+       
+
+    </script>
+
+  
+</body>
+</html>

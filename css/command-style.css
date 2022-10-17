@@ -1,0 +1,282 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,80");
+
+:root {
+    --border-field: 2px solid rgba(0, 0, 0, 0);
+
+}
+
+* {
+    
+    
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}   
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+
+    background: #3D32BF;
+    height: 80px;
+
+    width: 100%;
+
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+  
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+a.active{
+    background: #2E2692;
+    
+    transition: .5s;
+}
+
+a:hover{
+    background: rgb(35, 35, 35, 0.5);
+    
+    transition: .5s;
+}
+
+
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+#check {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 1206px){
+
+    nav ul li a {
+        opacity: 0;
+    }
+    
+    label.logo {
+        font-size: 25px;
+        padding-right: 120px;
+    }
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 858px){
+
+    .checkbtn{
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333058;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        opacity: 1;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #635ACB;
+    }
+
+    
+
+    
+
+   
+    #check:checked ~ ul {
+        left: 0;
+      
+        
+    }
+
+    .content-box {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        display: none;
+    }
+
+
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: -1;
+    filter: blur(50px);
+
+}
+
+.content-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+
+}
+
+.left {
+    height: 100%;
+    background: url("purshase.png") no-repeat center;
+    background-size: cover;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+h2 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: var(--border-field);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+   
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area {
+    min-height: 150px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #635ACB;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #3D32BF;
+}
+
+
+
+
+
+
+
+

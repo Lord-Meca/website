@@ -1,0 +1,266 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,80");
+
+* {
+    
+    
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}   
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+
+    background: #3D32BF;
+    height: 80px;
+
+    width: 100%;
+
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+  
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+a.active{
+    background: #2E2692;
+    
+    transition: .5s;
+}
+
+a:hover{
+    background: rgb(35, 35, 35, 0.5);
+    
+    transition: .5s;
+}
+
+
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+#check {
+    display: none;
+}
+
+.short-description {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.short-description .title {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    color: #000;
+
+
+}
+
+.short-description .title-2 {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    color: #265892;
+
+    
+}
+
+.tools {
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 10px;
+    background-color: #985acb;
+    padding: 5px 5px;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+.boxes {
+
+    padding: 10px 10px;
+    padding-right: 25px;
+
+    border: 3px solid #635ACB;
+    border-radius: 15px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.boxes img {
+
+    margin-left: 20px;
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 5px;
+    
+}
+
+.boxes img:hover{
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+    background-color: #212121;
+}
+
+.image {
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 1206px){
+
+    nav ul li a {
+        opacity: 0;
+    }
+ 
+
+    .short-description .title,
+    .short-description .title-2{
+    
+        text-align: left;
+    }
+
+    label.logo {
+        font-size: 25px;
+        padding-right: 120px;
+    }
+
+    .short-description {
+        display: grid;
+    }
+
+    .tools {
+        font-size: 21px;
+    }
+
+    
+ 
+
+}
+
+
+
+
+@media (max-width: 858px){
+
+    .checkbtn{
+        display: block;
+    }
+
+
+
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333058;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        opacity: 1;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #635ACB;
+    }
+
+
+   
+    #check:checked ~ ul {
+        left: 0;
+      
+        
+    }
+
+  
+
+   
+
+   
+
+   
+
+ 
+
+}
+
+
+
+
+
+/*section {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #64542b, #2E2692, #333058);
+    background-size: 400% 400%;
+    position: relative;
+}*/
+
+
+

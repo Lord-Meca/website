@@ -1,0 +1,292 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,80");
+
+* {
+    
+    /*cursor: url("../images/others/cursor1.png"), auto;;*/
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}   
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+
+    background: #3D32BF;
+    height: 80px;
+
+    width: 100%;
+
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+  
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+a.active{
+    background: #2E2692;
+    
+    transition: .5s;
+}
+
+a:hover{
+    background: rgb(35, 35, 35, 0.5);
+    
+    transition: .5s;
+}
+
+
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check {
+    display: none;
+}
+
+.image {
+    text-align: center;
+}
+
+.contents {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.java-box {
+    width: 300px;
+    height: 350px;
+
+    border: 2px solid rgb(12, 161, 206);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nodejs-box {
+    width: 300px;
+    height: 350px;
+
+    border: 2px solid rgb(69, 194, 58);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nodejs-box image {
+
+    text-decoration: underline;
+
+}
+
+.java-box .list .price {
+    
+    margin-left: 17%;
+    
+    text-transform: uppercase;
+    background-color: #1b3cce;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 3px;
+}
+
+.nodejs-box .list .price {
+    
+    margin-left: 17%;
+    
+    text-transform: uppercase;
+    background-color: #34b445;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 3px;
+}
+
+.nodejs-box .btn:hover,
+.java-box .btn:hover{
+
+    cursor: pointer;
+   
+}
+
+.nodejs-box .btn {
+
+    color: white;
+
+    padding: 20px 60px;
+
+    text-transform: uppercase;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #4eaf04;
+    box-shadow: 0 5px 0 #437e01;
+}
+  
+.nodejs-box .btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.java-box .btn {
+
+    color: white;
+
+    padding: 20px 60px;
+
+    text-transform: uppercase;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #152c94;
+    box-shadow: 0 5px 0 #0f1d5c;
+}
+  
+.java-box .btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+
+
+@media (max-width: 1206px){
+
+    nav ul li a {
+        opacity: 0;
+    }
+    
+ 
+
+
+
+    .contents {
+    
+        display: flex;
+        padding-left: 40%;
+    }
+    
+
+    .image {
+        margin-right: 100%;
+        transform: scale(.8);
+    }
+
+    label.logo {
+        font-size: 25px;
+        padding-right: 120px;
+    }
+
+
+
+
+}
+
+
+
+
+@media (max-width: 858px){
+
+    .checkbtn{
+        display: block;
+    }
+
+  
+    
+
+
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333058;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        opacity: 1;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #635ACB;
+    }
+
+    .contents {
+        display: grid;
+    }
+
+   
+    #check:checked ~ ul {
+        left: 0;
+      
+        
+    }
+
+   
+
+   
+
+   
+
+ 
+
+}
+
+
+
+
+
+
+

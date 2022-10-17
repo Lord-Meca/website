@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lord_Meca</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/command-style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/handler.js"></script>
+
+</head>
+<body>
+    <section class="bg">
+        <nav class="navbar">
+            
+        
+
+            <input type="checkbox" id="check">
+        
+            <label for="check" class="checkbtn">
+
+                <i class="fa fa-bars"></i>
+            
+            </label>
+
+            <label class="logo">Lord_Meca</label>
+            <ul class="navbar-ul">
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="services.html" class="active">Mes services</a></li>
+                <li><a href="#discord" class="contact">Discord</a></li>
+                <li><a href="#feedback" class="active">Faire un retour</a></li>
+             
+            </ul>
+        </nav>
+
+        <br>
+        <br>
+
+
+       
+
+     
+        
+        <div class="container">
+            <div class="content-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Contact</h2>
+
+                    <input type="text" class="field" id="username" placeholder="Pseudo">
+                    <input type="text" class="field" id="discord" placeholder="Discord">
+                    <textarea class="field area" placeholder="Message" id="message"></textarea>
+                    <button class="btn" onclick="sendBtn()" id="sendbutton">Envoyer</button>
+            
+                
+                </div>
+            </div>
+        </div>
+      
+       
+
+    </section>
+
+    
+
+
+
+
+
+    <script>
+
+        let barsButton = document.querySelector("#check");
+
+ 
+
+        
+        document.querySelector(".contact").addEventListener("click", () =>{
+
+            navigator.clipboard.writeText("Lord_Meca#9348");
+
+            document.querySelector(".contact").textContent = "COPIÉ";
+
+            setTimeout(() =>{
+                document.querySelector(".contact").textContent = "DISCORD";
+            }, 1000);
+
+        })
+
+
+
+        setInterval(() =>{
+
+            if(document.body.offsetWidth >= 1207){
+                barsButton.checked = false;
+            }
+            
+
+            if(barsButton.checked === false){
+               
+              
+              
+                document.querySelector(".container").style.display = "grid";
+                   
+      
+            } else {
+
+                
+                
+                document.querySelector(".container").style.display = "none";
+           
+                
+            }
+
+
+        }, 100);
+        
+      
+
+    
+
+
+     
+
+    
+
+    </script>
+
+</body>
+</html>

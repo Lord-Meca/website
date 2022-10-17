@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lord_Meca</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/home-style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="bg">
+        <nav class="navbar">
+            
+        
+
+            <input type="checkbox" id="check">
+        
+            <label for="check" class="checkbtn">
+
+                <i class="fa fa-bars"></i>
+            
+            </label>
+
+            <label class="logo">Lord_Meca</label>
+            <ul class="navbar-ul">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="services.html">Mes services</a></li>
+                <li><a href="#discord" class="contact">Discord</a></li>
+                <li><a href="command.html">Faire un retour</a></li>
+            
+            </ul>
+        </nav>
+
+        <br>
+        <br>
+
+        
+
+        <div class="presentation">
+            <h1 class="title">
+                Salut moi c'est Lord !<br>
+                </h1>
+                <h1 class="title-2">
+                    Développeur
+                    <div class="rotating-words">
+                        <span style="--d: 4s" id="rotatingWord" class="rotatingWord">Java.</span>
+                    
+                    </div>
+                </h1>
+            
+        
+                
+        
+        </div>
+        
+
+        <div align="center" class="image">
+        
+            <img src="images/others/home.png" width="450" height="440">
+
+        </div>
+
+
+
+       
+
+    </section>
+
+
+
+
+
+    <script>
+
+   
+        let barsButton = document.querySelector("#check");
+
+
+        document.querySelector(".contact").addEventListener("click", () =>{
+
+            navigator.clipboard.writeText("Lord_Meca#9348");
+
+            document.querySelector(".contact").textContent = "COPIÉ";
+
+            setTimeout(() =>{
+                document.querySelector(".contact").textContent = "DISCORD";
+            }, 1000);
+
+        })
+
+
+        setInterval(() =>{
+
+            if(document.body.offsetWidth >= 1207){
+                barsButton.checked = false;
+            }
+            
+
+            if(barsButton.checked === false){
+               
+              
+              
+                document.querySelector(".presentation").style.display = "grid";
+                document.querySelector(".image").style.display = "block";      
+      
+            } else {
+
+                
+                
+                document.querySelector(".presentation").style.display = "none";
+                document.querySelector(".image").style.display = "none";
+            }
+
+
+        }, 100);
+        
+      
+
+    
+
+
+       
+
+        var rotatingWord = 1;
+
+        setInterval(() => {
+
+            
+        
+
+            if(rotatingWord === 1){
+                document.querySelector("#rotatingWord").textContent = "Java.";
+                rotatingWord = 2;
+         
+            } else if(rotatingWord === 2){
+                document.querySelector("#rotatingWord").textContent = "Bot Discord.";
+                rotatingWord = 3;
+  
+            } else if(rotatingWord === 3){
+                document.querySelector("#rotatingWord").textContent = "Web.";
+                rotatingWord = 1;
+                
+            }
+
+            
+
+            
+           
+
+
+
+        }, 6300);
+
+    </script>
+
+</body>
+</html>
