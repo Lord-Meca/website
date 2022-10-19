@@ -21,7 +21,7 @@
         
             <label for="check" class="checkbtn">
 
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-bars" id="icon"></i>
             
             </label>
 
@@ -106,7 +106,16 @@
 
     
     
-    
+        barsButton.addEventListener("click", () => {
+
+            if(barsButton.checked) {
+                document.getElementById("icon").className = "fa fa-close";
+            } else {
+                document.getElementById("icon").className = "fa fa-bars";
+            }
+
+
+        })
 
         
        

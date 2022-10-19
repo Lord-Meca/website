@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/services-style.css">
-
+    <link rel="shortcut icon" type="x-icon" href="images/others/aki_cm.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="js/cursor.js"></script>
@@ -23,7 +23,7 @@
         
             <label for="check" class="checkbtn">
 
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-bars" id="icon"></i>
             
             </label>
 
@@ -109,7 +109,16 @@
         let barsButton = document.querySelector("#check");
 
       
-    
+        barsButton.addEventListener("click", () => {
+
+            if(barsButton.checked) {
+                document.getElementById("icon").className = "fa fa-close";
+            } else {
+                document.getElementById("icon").className = "fa fa-bars";
+            }
+
+
+        })
        
 
         

@@ -22,11 +22,13 @@
         
             <label for="check" class="checkbtn">
 
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-bars" id="icon"></i>
             
             </label>
 
             <label class="logo">Lord_Meca</label>
+
+        
             <ul class="navbar-ul">
                 <li><a href="#home" class="active">Accueil</a></li>
                 <li><a href="about.html">A propos</a></li>
@@ -53,6 +55,8 @@
                     
                     </div>
                 </h1>
+
+       
             
         
                 
@@ -81,6 +85,16 @@
    
         let barsButton = document.querySelector("#check");
 
+        barsButton.addEventListener("click", () => {
+
+            if(barsButton.checked) {
+                document.getElementById("icon").className = "fa fa-close";
+            } else {
+                document.getElementById("icon").className = "fa fa-bars";
+            }
+
+       
+        })
 
         document.querySelector(".contact").addEventListener("click", () =>{
 
