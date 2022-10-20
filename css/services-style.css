@@ -214,9 +214,9 @@ a:hover{
 
     label.logo {
         font-size: 25px;
-        padding-right: 120px;
+     
+        line-height: 80px;
     }
-
 
 
 
@@ -226,6 +226,12 @@ a:hover{
 
 
 @media (max-width: 858px){
+
+    label.logo {
+        font-size: 20px;
+     
+        line-height: 80px;
+    }
 
     .checkbtn{
         display: block;

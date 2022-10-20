@@ -145,9 +145,7 @@ a:hover{
     
 }
 
-.boxes img {
-    color: #000;
-}
+
 
 .boxes img:hover{
     transform: scale(1.5);
@@ -176,10 +174,7 @@ a:hover{
         text-align: left;
     }
 
-    label.logo {
-        font-size: 25px;
-        padding-right: 120px;
-    }
+
 
     .short-description {
         display: grid;
@@ -189,8 +184,13 @@ a:hover{
         font-size: 21px;
     }
 
-    
- 
+    label.logo {
+        font-size: 25px;
+     
+        line-height: 80px;
+    }
+
+
 
 }
 
@@ -198,6 +198,12 @@ a:hover{
 
 
 @media (max-width: 858px){
+
+    label.logo {
+        font-size: 20px;
+     
+        line-height: 80px;
+    }
 
     .checkbtn{
         display: block;

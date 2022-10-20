@@ -172,10 +172,7 @@ a:hover{
         opacity: 0;
     }
     
-    label.logo {
-        font-size: 25px;
-        padding-right: 120px;
-    }
+
 
     
     .image {
@@ -189,6 +186,12 @@ a:hover{
         justify-content: left;
     }
 
+    label.logo {
+        font-size: 25px;
+     
+        line-height: 80px;
+    }
+
 
 
 }
@@ -197,6 +200,12 @@ a:hover{
 
 
 @media (max-width: 858px){
+
+    label.logo {
+        font-size: 20px;
+     
+        line-height: 80px;
+    }
 
     .checkbtn{
         display: block;
@@ -237,6 +246,8 @@ a:hover{
       
         
     }
+
+
 
   
    
